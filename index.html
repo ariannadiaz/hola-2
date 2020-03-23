@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portafolio Arianna Díaz</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-custom.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+<link href="css/jquery.fancybox.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar">
+<header class="header-area">
+    <!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+		  <a class="navbar-brand" href="index.html">Portafolio</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbar">
+			<ul class="navbar-nav ml-auto">
+			  <li class="nav-item active">
+				<a class="nav-link" href="index.html">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#about">Sobre mi</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#services">Servicios</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#contact">Contacto</a>
+			  </li>
+			</ul>
+			  <li class="nav-item">
+				<a class="nav-link" href="#proyectos">Proyectos</a>
+			  </li>
+		  </div>
+		</div>
+	</nav>
+</header>
+
+<!-- Intro Section -->
+<section id="intro" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+				<div class="logo">
+               <img src="img/logo portafolio.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Sobre mi</h1>
+				<p>Soy estudiante de la carrera de Diseño Gráfico.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+				<h1>Servicios</h1>
+				<div class="container">
+				<div class="row">
+					<article class="col-md-4 col-sm-12 col-xs-12">
+					<i class="fas fa-mouse"></i>
+					<h2>Diseño de marcas</h2>
+					</article>
+					<article class="col-md-4 col-sm-12 col-xs-12">
+					<i class="fas fa-book-open"></i>
+					<h2>Diseño Editorial</h2>
+					</article>
+					<article class="col-md-4 col-sm-12 col-xs-12">
+					<i class="fas fa-camera"></i>
+					<h2>Fotografía</h2>
+					</article>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Proyectos -->
+<section id="proyectos">
+<div class="container">
+<div class="cisnes">
+<a data-fancybox="gallery" href="img/portada libro portafolio.jpg"><img src="img/portada libro portafolio.jpg"></a>
+<a data-fancybox="gallery" href="img/portafolio cuento.jpg"><img src="img/portafolio cuento.jpg"></a>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+				<h1>¡Trabajemos juntos!</h1>
+				<form>
+					
+					<label class="formulario">Nombre</label>
+					<input name="nombre" id="nombre" type="text" class="form-control" required>
+					
+					<label class="formulario">Correo</label>
+					<input name="correo" id="correo" type="email" class="form-control" required>
+					
+					<label class="formulario">Mensaje</label>
+					<div class="mensaje">
+					<textarea name="textarea" id="cajatexto" cols="60px" rows="3"></textarea>
+					</div>
+					
+					<button type="enviar" id="enviar" class="btn-enviar">Enviar</button>
+				</form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+	<div class="container">
+		<p>Footer</p>
+	</div>
+</footer>
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script>
+	$(function() {
+
+		
+		$('#navbar').onePageNav({
+			currentClass: 'active',
+			scrollSpeed: 1000,
+			easing: 'swing'
+		});
+		
+		$(window).on('scroll', function () {
+			if ($(window).scrollTop() > 48) {
+				$('.header-area').addClass('sticky');
+			} else {
+				$('.header-area').removeClass('sticky');
+			}
+        });
+
+	});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</body>
+
+</html>
